@@ -1,0 +1,43 @@
+.album-card {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 16px;
+  transition: transform 0.15s ease, border-color 0.15s ease;
+}
+
+.album-card:hover {
+  border-color: var(--accent);
+  transform: translateY(-2px);
+}
+
+.album-card-art {
+  aspect-ratio: 1;
+  border-radius: var(--radius-sm);
+  background: linear-gradient(155deg, var(--surface-hover), var(--bg));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.album-card-art-glyph {
+  font-size: 32px;
+  color: var(--accent);
+  opacity: 0.7;
+}
+
+.album-card-title {
+  font-weight: 700;
+  font-size: 14.5px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.album-card-count {
+  font-size: 12px;
+  color: var(--text-muted);
+}
